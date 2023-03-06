@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /*align containers to the top*/
+}
+.all_containers {
+  /* flex: 1; */
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+.container_1 {
+  flex-basis: 50%;
+}
+.container_2 {
+  flex-basis: 30%;
+}
+.container_3 {
+  flex-basis: 20%;
+}
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.Dropdown_content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: beige;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px darkblue;
+  padding: 12px 16px;
+  border-radius: 5px;
+}
+
+.dropdown:focus .Dropdown_content {
+  display: block;
+}
+.image {
+  width: 100%;
+  height: auto;
+}
+.left {
+  flex-basis: 50%;
+}
+.right {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /*space out the containers*/
+}
+.right .container {
+  flex-basis: 48%; /*will adjust the size of boxes to fit in the container*/
+}
