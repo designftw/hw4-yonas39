@@ -2,43 +2,110 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title><!-- CSS Feature Demo name here --></title>
+    <title><!-- CSS Feature Demo name here --> CSS DEMO</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- <span>
       <input type="range" min="0" max="100" value="5" />
     </span> -->
-    <div class="Container">
+    <div class="container">
       <div class="all_containers container_1 left">
-        <h2>Cntainer_1</h2>
+        <h2>CSS Demo</h2>
         <div class="dropdown">
-          <button>Dropdown Menu</button>
+          <!-- <button>Dropdown Menu</button> -->
+          <p>Dropdown Menu</p>
           <div class="Dropdown_content">
-            <a href="#"> Option_1</a>
-            <a href="#"> Option_2</a>
-            <a href="#"> Option_3</a>
-            <!--  -->
-            <a href="#"> Option_1</a>
-            <a href="#"> Option_2</a>
-            <a href="#"> Option_3</a>
-            <!--  -->
-            <a href="#"> Option_1</a>
-            <a href="#"> Option_2</a>
-            <a href="#"> Option_3</a>
+            <details>
+              <summary>Margin</summary>
+              <label for="range"> Margin-top : </label>
+              <input type="range" min="0" max="100" value="5" />
+              <br />
+
+              <label for="range"> Margin-right : </label>
+              <input type="range" min="0" max="100" value="5" />
+              <br />
+
+              <label for="range"> Margin-bottom :</label>
+              <input type="range" min="0" max="100" value="10" />
+              <br />
+
+              <label for="range"> Margin-left :</label>
+              <input type="range" min="0" max="100" value="10" />
+            </details>
+
+            <details>
+              <summary>Padding</summary>
+              <label for="range"> Padding-top :</label>
+              <input type="range" min="0" max="100" value="10" />
+              <br />
+
+              <label for="range"> Padding-right :</label>
+              <input type="range" min="0" max="100" value="10" />
+              <br />
+
+              <label for="range"> Padding-bottom :</label>
+              <input type="range" min="0" max="100" value="10" />
+              <br />
+
+              <label for="range"> Padding-left :</label>
+              <input type="range" min="0" max="100" value="10" />
+            </details>
+
+            <details>
+              <summary>Border-width</summary>
+              <label for="range"> Border-width-top :</label>
+              <input type="range" min="0" max="100" value="10" />
+              <br />
+
+              <label for="range"> Border-width-right:</label>
+              <input type="range" min="0" max="100" value="15" />
+              <br />
+
+              <label for="range"> Border-width-bottom:</label>
+              <input type="range" min="0" max="100" value="15" />
+              <br />
+
+              <label for="range"> Border-width-left:</label>
+              <input type="range" min="0" max="100" value="15" />
+            </details>
           </div>
+          <!-- <div class="Dropdown_content">
+            <label for="range"> background</label>
+            <input type="range" min="0" max="100" value="5" />
+
+            <label for="range"> background_attachment </label>
+            <input type="range" min="0" max="100" value="5" />
+
+            <label for="range"> background_image</label>
+            <input type="range" min="0" max="100" value="10" />
+
+            <label for="range"> background_effect_4</label>
+            <input type="range" min="0" max="100" value="10" />
+
+            <label for="range"> background_effect_5</label>
+            <input type="range" min="0" max="100" value="15" />
+          </div> -->
         </div>
       </div>
       <div class="all_containers container_2 right">
-        <h2>Container_2</h2>
+        <h2>Look the impacts here</h2>
         <img
           class="image"
-          src="/hw4-yonas39/css-demo-critique/image_1"
+          src="image_1.png"
+          width="200px"
+          height="200px"
           alt="someimage_discription"
         />
       </div>
       <div class="all_containers Container_3 right">
-        <h2>Container_3</h2>
-        <p>the users will see the code snippet here</p>
+        <h2>CSS code</h2>
+        <label class="css-output"
+          >the users will see the code snippet here
+          <input class="css-read" readonly="" />
+          <pre class="css-read">the CSS code is: .....</pre>
+        </label>
       </div>
     </div>
   </body>

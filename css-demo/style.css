@@ -1,7 +1,7 @@
 .container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start; /*align containers to the top*/
+  /* flex-wrap: wrap;
+  align-items: flex-start; align containers to the top */
 }
 .all_containers {
   /* flex: 1; */
@@ -24,8 +24,8 @@
   position: relative;
 }
 .Dropdown_content {
-  display: none;
-  position: absolute;
+  /* display: none; */
+  position: relative;
   z-index: 1;
   background-color: beige;
   min-width: 160px;
@@ -34,22 +34,40 @@
   border-radius: 5px;
 }
 
-.dropdown:focus .Dropdown_content {
+/* .dropdown:hover .Dropdown_content {
   display: block;
-}
-.image {
-  width: 100%;
-  height: auto;
-}
+} */
+/* .image {
+  width: 200px;
+  height: 200px;
+} */
 .left {
+  align-items: right;
+  size-adjust: auto;
   flex-basis: 50%;
+  /* flex-grow: auto; */
+  align-self: flex-start;
 }
 .right {
   flex-basis: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /*space out the containers*/
+  flex-direction: row;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; space out the containers */
 }
 .right .container {
   flex-basis: 48%; /*will adjust the size of boxes to fit in the container*/
+}
+
+summary {
+  color: rgb(144, 23, 237);
+}
+
+.css-output {
+}
+.css-read {
+  width: 200px; /* adjust the width of the input box */
+  height: 30px; /* adjust the height of the input box */
+  padding: 10px;
+  background-color: beige;
 }
