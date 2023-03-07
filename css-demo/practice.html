@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice on mavu</title>
+  </head>
+  <body>
+    <!-- <div id="app"><input type="number" v-model="foo" /> + 1= {{foo+1}}</div> -->
+    <!-- <v-app>{{2+3}}</v-app> -->
+
+    <!-- <v-app data='{"list":[{"foo": 1}]}'>
+      <article v-for="item in list">
+        <input v-model="item.foo" /> {{ item.foo }}
+      </article>
+      <button @click="list.push({foo: list.length + 1})">Add item</button>
+    </v-app> -->
+
+    <v-app data='{"list":[{"foo":1}]}'>
+      <article v-for="item in list">
+        <input type="text" v-model="item.foo" /> {{item.foo}}
+      </article>
+      <button @click="list.push({foo:list.length+1})">Add Item</button>
+    </v-app>
+    <!-- prints 5 on the page -->
+
+    <script type="module">
+      import { createApp } from "https://mavue.mavo.io/mavue.js";
+      let app = createApp({
+        data: {
+          foo: 1,
+        },
+      });
+    </script>
+  </body>
+</html>
