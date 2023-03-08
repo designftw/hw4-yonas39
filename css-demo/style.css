@@ -117,7 +117,8 @@ input[type="range"] {
 }
 
 .img-border {
-  border: 2px solid purple;
+  /* position: relative; */
+  border: 2px solid rgb(144, 23, 237);
   display: inline-block;
   /* border-left-width: 10px; */
   /* border-width: 10px 10px; */

@@ -15,7 +15,7 @@ globalThis.app = createApp(
       padding_bottom: 1,
       padding_left: 1,
 
-      border_width_top: 1,
+      border_top: 1,
       border_width_right: 1,
       border_width_bottom: 1,
       border_width_left: 1,

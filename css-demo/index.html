@@ -149,8 +149,8 @@
                   max="100"
                   value="1"
                   step="1"
-                  v-model="border_width_top"
-                />{{border_width_top}}
+                  v-model="border_top"
+                />{{border_top}}
               </div>
               <br />
 
@@ -201,11 +201,14 @@
 
       <!-- subcontainer 2 - holds an image and border that displayes the effect of the changes made-->
       <div class="all_containers container_2 right">
-        <h2>CSS Effects:</h2>
+        <div><h2>CSS Effects:</h2></div>
+
         <span class="img-border">
           <!-- style="border: 1px solid red; display: inline-block" -->
           <!--  :style="`border-width: ${border_width_top}px ${border_width_right}px ${border_width_bottom}px ${border_width_left}px`" -->
-
+          <!-- <div :style="`padding-top: ${border_top}`">
+            {{border_top}} TEST TEXT
+          </div> -->
           <img
             class="image"
             src="image_1.png"
@@ -214,8 +217,9 @@
             alt="someimage_discription"
             :style="`margin: ${margin_top}px ${margin_right}px ${margin_bottom}px ${margin_left}px; 
             padding: ${padding_top}px ${padding_right}px ${padding_bottom}px ${padding_left}px;  
-            border-width: ${border_width_top}px ${border_width_right}px ${border_width_bottom}px ${border_width_left}px`"
+            border-width-top: ${border_top}px; `"
           />
+          <!-- ${border_width_right}px ${border_width_bottom}px ${border_width_left}px -->
         </span>
         <!-- <element :style="`margin-top: ${margin_top}px`"></element> -->
       </div>
@@ -232,8 +236,8 @@
           > <em >...The CSS code is: ...</em> <br/> <br/> <br/>
 
           <span >margin:  {{margin_top}}px {{margin_right}}px {{margin_bottom}}px {{margin_left}}px;</span><br/>
-          <span >padding: {{padding_top}}px {{padding_right}}px {{padding_bottom}}px {{padding_left}}px</span><br/>
-          <span >border-width: {{border_width_top}}px {{border_width_right}}px {{border_width_bottom}}px {{border_width_left}}px</span>
+          <span >padding: {{padding_top}}px {{padding_right}}px {{padding_bottom}}px {{padding_left}}px;</span><br/>
+          <span >border-width: {{border_top}}px {{border_width_right}}px {{border_width_bottom}}px {{border_width_left}}px;</span>
 
           </pre>
         </label>
