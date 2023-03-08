@@ -1,3 +1,6 @@
+body {
+  background-color: beige;
+}
 .container {
   display: flex;
   /* flex-wrap: wrap;
@@ -20,8 +23,10 @@
   flex-basis: 20%;
 }
 .dropdown {
+  align-items: justify;
   text-align: justify;
   display: inline-block;
+  width: 100%;
   position: relative;
 }
 .Dropdown_content {
@@ -37,9 +42,12 @@
 }
 div details label {
   text-align: justify;
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
 }
 div details input {
-  text-align: right;
+  /* text-align: right; */
+  align-items: justify;
 }
 
 /* .dropdown:hover .Dropdown_content {
@@ -69,18 +77,48 @@ div details input {
 
 summary {
   color: rgb(144, 23, 237);
+  font-size: 20px;
+  font-weight: bold;
 }
-
+.css_code {
+  text-align: justify;
+}
 /* .css-output {
+  align-items: center;
 } */
-.css-read {
-  width: 200px; /* adjust the width of the input box */
-  height: 30px; /* adjust the height of the input box */
-  padding: 10px;
-  background-color: beige;
-}
+/* div pre .css-read { */
+/* width: 200px; adjust the width of the input box
+  height: 30px; adjust the height of the input box */
+/* border: 1px solid purple;
+  padding-right: 50px;
+  color: azure;
+  background-color: rgb(47, 47, 45);
+  align-items: left; */
+/* line-height: 5px; */
+/* margin-bottom: 20px; */
+/* text-align: center; */
+/* } */
 
 /* this feature helps to add accessiblity using key board arrow  */
 input[type="range"] {
   writing-mode: bt-lr;
+}
+
+.title {
+  /* font-family: Arial, Helvetica, sans-serif;
+
+  /* position: fixed; */
+  margin: 0px;
+  width: 100%;
+  background-color: #333333;
+  color: beige;
+  padding: 10px;
+  text-align: center;
+}
+
+.img-border {
+  border: 2px solid purple;
+  display: inline-block;
+  /* border-left-width: 10px; */
+  /* border-width: 10px 10px; */
 }

@@ -7,38 +7,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body id="app" type="module">
-    <!-- <input type="number" v-model="foo" />
-    <div style="font-size:{{foo}}px">{{foo}}</div> -->
-    <!-- <div id="app"><input type="number" v-model="foo" /> + 1= {{foo+1}}</div> -->
-    <!-- <span v-model="data">{{foo}}</span> -->
-    <!-- <v-app> {{3+4}} </v-app>
-    <v-app data="{foo: 2}">
-      <input type="number" v-model="foo" />
-      sqrt({{ foo }}) = {{ Math.sqrt(foo) }}
-    </v-app> -->
+    <!-- Page title -->
+    <div class="title">
+      <h1>Demo for CSS Margin, Padding, and Border-width</h1>
+    </div>
 
-    <!-- <span>
-      <input type="range" min="0" max="100" value="5" />
-    </span> -->
-
-    <!-- <v-app data='{"list":[{"foo":1}]}'>
-      <article v-for="item in list">
-        <input type="text" v-model="item.foo" /> {{item.foo}}
-      </article>
-      <button @click="list.push({foo: list.length +1})">Add Item</button>
-    </v-app> -->
+    <!-- Page body under one container with subcontainer inside -->
 
     <div class="container">
-      <div><h1>Learn CSS Margin, padding and</h1></div>
+      <!-- subcontainer 1 - holds the css effect items -->
 
       <div class="all_containers container_1 left">
-        <h2>CSS Demo</h2>
+        <h2>CSS Styles:</h2>
         <div class="dropdown">
           <!-- <button>Dropdown Menu</button> -->
-          <p>Dropdown Menu</p>
 
           <div class="Dropdown_content">
-            <details>
+            <details open>
               <!-- margin details -->
               <summary>Margin</summary>
 
@@ -46,9 +31,9 @@
                 <label for="range"> Margin-top : </label>
                 <input
                   type="range"
-                  min="0"
-                  max="100"
                   value="1"
+                  min="-100"
+                  max="100"
                   step="1"
                   v-model="margin_top"
                 />
@@ -60,9 +45,9 @@
                 <label for="range"> Margin-right : </label>
                 <input
                   type="range"
-                  min="0"
-                  max="100"
                   value="1"
+                  min="-100"
+                  max="100"
                   step="1"
                   v-model="margin_right"
                 />{{margin_right}}
@@ -73,161 +58,184 @@
                 <label for="range"> Margin-bottom :</label>
                 <input
                   type="range"
-                  min="0"
-                  max="100"
                   value="1"
+                  min="-100"
+                  max="100"
                   step="1"
                   v-model="margin_bottom"
                 />
+                {{margin_bottom}}
               </div>
-              {{margin_bottom}}
               <br />
 
               <div>
                 <label for="range"> Margin-left :</label>
                 <input
                   type="range"
-                  min="0"
-                  max="100"
                   value="1"
+                  min="-100"
+                  max="100"
                   step="1"
                   v-model="margin_left"
-                />
+                />{{margin_left}}
               </div>
             </details>
 
             <!-- Padding details -->
             <details>
               <summary>Padding</summary>
-              <label for="range"> Padding-top :</label>
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value="1"
-                step="1"
-                v-model="padding_top"
-              />{{padding_top}}
+              <div>
+                <label for="range"> Padding-top :</label>
+
+                <input type="range" value="1" step="1" v-model="padding_top" />
+
+                {{padding_top}}
+              </div>
               <br />
 
-              <label for="range"> Padding-right :</label>
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value="1"
-                step="1"
-                v-model="padding_right"
-              />
-              {{padding_right}}
+              <div>
+                <label for="range"> Padding-right :</label>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="1"
+                  step="1"
+                  v-model="padding_right"
+                />
+
+                {{padding_right}}
+              </div>
               <br />
 
-              <label for="range"> Padding-bottom :</label>
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value="1"
-                step="1"
-                v-model="padding_bottom"
-              />{{padding_bottom}}
+              <div>
+                <label for="range"> Padding-bottom :</label>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="1"
+                  step="1"
+                  v-model="padding_bottom"
+                />
+
+                {{padding_bottom}}
+              </div>
               <br />
 
-              <label for="range"> Padding-left :</label>
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value="1"
-                step="1"
-                v-model="padding_left"
-              />{{padding_left}}
+              <div>
+                <label for="range"> Padding-left :</label>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="1"
+                  step="1"
+                  v-model="padding_left"
+                />
+
+                {{padding_left}}
+              </div>
             </details>
 
             <!-- Border-width details -->
             <details>
               <summary>Border-width</summary>
-              <label for="range"> Border-width-top :</label>
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value="1"
-                step="1"
-                v-model="border_width_top"
-              />{{border_width_top}}
+              <div>
+                <label for="range"> Border-width-top :</label>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="1"
+                  step="1"
+                  v-model="border_width_top"
+                />{{border_width_top}}
+              </div>
               <br />
 
-              <label for="range"> Border-width-right:</label>
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value="1"
-                step="1"
-                v-model="border_width_right"
-              />
-              {{border_width_right}}
+              <div>
+                <label for="range"> Border-width-right:</label>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="1"
+                  step="1"
+                  v-model="border_width_right"
+                />
+                {{border_width_right}}
+              </div>
               <br />
 
-              <label for="range"> Border-width-bottom:</label>
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value="1"
-                step="1"
-                v-model="border_width_bottom"
-              />
-              {{border_width_bottom}}
+              <div>
+                <label for="range"> Border-width-bottom:</label>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="1"
+                  step="1"
+                  v-model="border_width_bottom"
+                />
+                {{border_width_bottom}}
+              </div>
               <br />
 
-              <label for="range"> Border-width-left:</label>
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value="1"
-                step="1"
-                v-model="border_width_left"
-              />
-              {{border_width_left}}
+              <div>
+                <label for="range"> Border-width-left:</label>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="1"
+                  step="1"
+                  v-model="border_width_left"
+                />
+                {{border_width_left}}
+              </div>
             </details>
           </div>
-          <!-- <div class="Dropdown_content">
-            <label for="range"> background</label>
-            <input type="range" min="0" max="100" value="5" />
-
-            <label for="range"> background_attachment </label>
-            <input type="range" min="0" max="100" value="5" />
-
-            <label for="range"> background_image</label>
-            <input type="range" min="0" max="100" value="10" />
-
-            <label for="range"> background_effect_4</label>
-            <input type="range" min="0" max="100" value="10" />
-
-            <label for="range"> background_effect_5</label>
-            <input type="range" min="0" max="100" value="15" />
-          </div> -->
         </div>
       </div>
+
+      <!-- subcontainer 2 - holds an image and border that displayes the effect of the changes made-->
       <div class="all_containers container_2 right">
-        <h2>Look the impacts here</h2>
-        <img
-          class="image"
-          src="image_1.png"
-          width="200px"
-          height="200px"
-          alt="someimage_discription"
-        />
+        <h2>CSS Effects:</h2>
+        <span class="img-border">
+          <!-- style="border: 1px solid red; display: inline-block" -->
+          <!--  :style="`border-width: ${border_width_top}px ${border_width_right}px ${border_width_bottom}px ${border_width_left}px`" -->
+
+          <img
+            class="image"
+            src="image_1.png"
+            width="200"
+            height="200"
+            alt="someimage_discription"
+            :style="`margin: ${margin_top}px ${margin_right}px ${margin_bottom}px ${margin_left}px; 
+            padding: ${padding_top}px ${padding_right}px ${padding_bottom}px ${padding_left}px;  
+            border-width: ${border_width_top}px ${border_width_right}px ${border_width_bottom}px ${border_width_left}px`"
+          />
+        </span>
+        <!-- <element :style="`margin-top: ${margin_top}px`"></element> -->
       </div>
-      <div class="all_containers Container_3 right">
-        <h2>CSS code</h2>
+
+      <!-- subcontainer 3 - holds the css code that generated the effect displayed on subcontainer2 -->
+      <div class="all_containers Container_3 right" style="text-align: middle">
+        <h2>CSS code:</h2>
         <label class="css-output"
-          >the users will see the code snippet here
-          <input class="css-read" readonly="" />
-          <pre class="css-read">the CSS code is: .....</pre>
+          >The users will see the code snippet here
+          <!-- <input class="css-read" readonly="" /> -->
+          <!-- class="css-read" -->
+          <pre
+            style="text-align: middle"
+          > <em >...The CSS code is: ...</em> <br/> <br/> <br/>
+
+          <span >margin:  {{margin_top}}px {{margin_right}}px {{margin_bottom}}px {{margin_left}}px;</span><br/>
+          <span >padding: {{padding_top}}px {{padding_right}}px {{padding_bottom}}px {{padding_left}}px</span><br/>
+          <span >border-width: {{border_width_top}}px {{border_width_right}}px {{border_width_bottom}}px {{border_width_left}}px</span>
+
+          </pre>
         </label>
       </div>
     </div>
