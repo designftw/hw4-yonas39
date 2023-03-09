@@ -1,16 +1,25 @@
 /* genral styles */
 body {
-  padding: 3% 5%;
-  margin: 3%;
   background-color: rgb(229, 240, 248);
   font-family: "Times New Roman", Times, sans-serif;
   font-size: 18px;
 }
 body h1 {
   text-align: center;
-  /* color: rgb(0, 255, 128); */
   color: rgb(229, 240, 248);
-  /* background-color: lightslategray; */
-  background-color: darkslategray;
+  background-color: rgb(120, 167, 167);
   padding: 0.5em;
 }
+
+body article {
+  line-height: 35px;
+  padding: 3% 5%;
+  margin: 3%;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
